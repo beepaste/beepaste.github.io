@@ -23,9 +23,9 @@
           <a href="#main"><img class="brand-logo logo" src="https://beta.beepaste.io/static/img/logotype.png"></a>
           <ul  id="nav-mobile" class="right hide-on-med-and-down">
             <li scroll-target="#feature"><a href="#feature">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#donate">Donate</a></li>
+            <li scroll-target="#about"><a href="#about">About</a></li>
+            <li scroll-target="#team"><a href="#team">Team</a></li>
+            <li scroll-target="#Donate"><a href="#donate">Donate</a></li>
           </ul>
         </div>
         </div>
@@ -34,7 +34,10 @@
       <script type="text/javascript">
       $(document).ready(function(){
         $('.scrollspy').scrollSpy({
-            'scrollOffset': 50
+            'scrollOffset': 50,
+            getActiveElement: function(id) {
+                return 'li[scroll-target="#' + id + '"]';
+            }
         });
       });
       </script>
