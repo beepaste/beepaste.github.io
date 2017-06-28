@@ -1,0 +1,57 @@
+.parallax-container {
+	height: 900px;
+}
+.b2{
+	background-color: #ffb300;
+  height: 500px;
+}
+.b3{
+	background-color: #ffb300;
+  height: 750px;
+}
+.navc{
+	background-color: #ffb300;
+}
+.nacli{
+	color: #64b5f6;
+}
+.htop {
+	color: white;
+	text-align: center;
+	padding-top: 250px;
+	font-size: 70px;
+	padding-bottom: 50px;
+	text-shadow: 0 0 1px #000;
+}
+.onv{
+	text-align: center;
+	font-size: 50px;
+	color: black;
+}
+.ftr {
+	padding-top: 50px;
+}
+.sftr {
+	text-align: center;
+	color: black;
+	opacity: 0.5;
+}
+.page-footer{
+	background-color:#ffb300;
+}
+.fac{
+	color: #64b5f6;
+}
+.gray {
+	color: #212121;
+}
+.logo{
+	width: 10%;
+}
+#nav-mobile a {
+  color: #000 ;
+}
+
+#nav-mobile .active{
+   color:#850;
+ }

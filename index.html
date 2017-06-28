@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name='author' content='Mostafa Asadi, mostafaasadi73@gmail.com'>
+    <meta name='designer' content='Mostafa Asadi'>
+    <title>BeePaste</title>
+    <link rel="stylesheet" href="css/ideal-image-slider.css">
+    <link rel="stylesheet" href="css/default-slider.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ideal-image-slider.js"></script>
+    <script src="js/iis-bullet-nav.js"></script>
+    <script src=" js/jquery-3.2.1.min.js" ></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/fa.js"></script>
+  </head>
+  <body>
+    <div class="navbar-fixed scrollspy">
+    <nav class="amber darken-1">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#main"><img class="brand-logo logo" src="http://beta.beepaste.io/static/img/logotype.png"></a>
+          <ul  id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#donate">Donate</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </div>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+      });
+      </script>
+        <section id="main" class="section scrollspy" style="padding-top: 0px;">
+        <div class="parallax-container">
+        <div class="parallax"><img src="img/bee.jpg"></div>
+        <h1 class="htop">BeePaste , paste your world !</h1>
+        <div class="row">
+          <div class="container">
+          <div class="col s4">
+          </div>
+          <div class="col s4 center">
+          <a href="https://beepaste.io/"> <button class="btn btn-success btn-lg light blue darken 2 " type="submit">Paste !</button></a>
+          </div>
+          <div class="col s4">
+          </div>
+        </div>
+        </div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+          $('.parallax').parallax();
+        });
+        </script>
+      </section>
+      <section id="feature" class="section scrollspy">
+        <div class="container">
+          <h1 class="onv ftr">Features</h1>
+          <h4 class="sftr">Lorem ipsum dolor sit amet, consectetur adipisicing </h4>
+          <div class="row">
+          <div class="col s3">
+            <i class="fa fa-shield fa-5x fac" aria-hidden="true"></i>
+            <h3>Secure</h3>
+          </div>
+          <div class="col s3">
+            <i class="fa fa-universal-access fa-5x fac" aria-hidden="true"></i>
+            <h3>Access</h3>
+          </div>
+          <div class="col s3">
+            <i class="fa fa-coffee fa-5x fac" aria-hidden="true"></i>
+            <h3>Coffee</h3>
+          </div>
+          <div class="col s3">
+            <i class="fa fa-hashtag fa-5x fac" aria-hidden="true"></i>
+            <h3>Hashtag</h3>
+          </div>
+        </div>
+      </div>
+      </section>
+    <section class="b2">
+      <div class="container">
+      <h1  id="about" class=" section scrollspy onv ftr">About</h1>
+      <div class="row">
+        <div class="col s6">
+          <div id="slider">
+            <img src="img/screen1.png" />
+            <img src="img/screen2.png" />
+            <img src="img/screen3.png" />
+          </div>
+          <script>
+          var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            height: 320,
+            interval: 2000
+          });
+          slider.addBulletNav();
+          slider.start();
+
+          </script>
+        </div>
+        <div class="col s6">
+          <p style="color: white;">BeePaste is a simple pastebin which is written using python, and pyramid framework. It's very first usage was just to share our code snippets with friends, but while we grew up, we saw new worlds, such as Sys admins, Bloggers and Teachers, whomever has some text to share with others! They also needed somewhere to share their pastes like server logs, blog posts and homework while they are chatting with others. So BeePaste is getting bigger and more useful by time, from a simple pastebin, it is becoming an advanced text sharing platform!
+
+Now let's see what are its features:</p>
+        </div>
+      </div>
+
+    </div>
+    </section>
+    <section id="team" class="section scrollspy">
+      <div class="container">
+      <h1 class="onv ftr">Team</h1>
+      <h4 class="sftr">developing heroes</h4>
+      <div class="row">
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/am.jpg">
+              <span class="card-title">Alireza Mosajjal</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light fac"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="card-content">
+              <p>DevOps engineer, Python enthusiast, Chromium contributor, Linux guy. Human, I guess.. ?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/mav.jpg">
+              <span class="card-title">Mohammad Amin Vahedinia</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light fac"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="card-content">
+              <p>Started Programming with C/C++, continued with both C++ and Python, and also Started the project! I also write @ hexlinux.ir (my own blog about linux and open-source apps!)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/sa.jpg">
+              <span class="card-title">Sadegh Alirezai</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light fac"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="card-content">
+              <p>Python Developer,Jr Software Engineer,Open-Source Lover</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/mostafa.jpg">
+              <span class="card-title">Mostafa Asadi</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light fac"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="card-content">
+              <p>A developer who loves Free software , I try to make world better.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    </section>
+    <section id="donate" class="section scrollspy b3">
+      <div class="container">
+      <h1 class="onv ftr">Donate</h1>
+      <h4 class="sftr">Take us a cup of coffee :)</h4>
+      <div class="row">
+        <div class="col s6">
+          <img class="responsive-img" src="img/bit.png" alt="bit">
+        </div>
+        <div class="col s6">
+          <blockquote><h4 class="white-text">1GUf5hkZSyiPFXHh2Y8YkzGvM9srSqBQWn</h4></blockquote>
+          <h5>As we are based in Iran, and due to the sanctions against where we live, the only possible way to collect donates from foreign people is Bitcoin! to buy bitcoins you can check <a href="https://www.bitcoin.com/buy-bitcoin">www.bitcoin.com/buy-bitcoin</a></h5>
+          <h5>Also if you have problems with bitcoin, you can contact us with donate@beepaste.io and we will get a solution for you :))</h5>
+        </div>
+      </div>
+    </div>
+    </section>
+    <footer class="page-footer">
+    <div class="footer-copyright">
+    <div class="container center">
+    <div><i class="fa fa-copyright gray" aria-hidden="true"><span class="gray"> 2017 BeePaste All rights reserved </span></i></div>
+    </div>
+    </div>
+    </footer>
+  </body>
+</html>
