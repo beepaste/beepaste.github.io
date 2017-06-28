@@ -9,8 +9,8 @@
     <meta name="description" content="BeePaste is a simple pastebin which is written using python, and sanic framework. It's very first usage was just to share our code snippets with friends, but while we grew up, we saw new worlds, such as SysAdmins, Bloggers and Teachers, whomever has some text to share with others! They also needed somewhere to share their pastes like server logs, blog posts and homework while they are chatting with each other. So BeePaste is getting bigger and more useful by time, from a simple pastebin, it is becoming an advanced text sharing platform!">
     <meta property="og:description" content="BeePaste is a simple pastebin which is written using python, and sanic framework. It's very first usage was just to share our code snippets with friends, but while we grew up, we saw new worlds, such as SysAdmins, Bloggers and Teachers, whomever has some text to share with others! They also needed somewhere to share their pastes like server logs, blog posts and homework while they are chatting with each other. So BeePaste is getting bigger and more useful by time, from a simple pastebin, it is becoming an advanced text sharing platform!">
     <meta name="twitter:description" content="BeePaste is a simple pastebin which is written using python, and sanic framework. It's very first usage was just to share our code snippets with friends, but while we grew up, we saw new worlds, such as SysAdmins, Bloggers and Teachers, whomever has some text to share with others! They also needed somewhere to share their pastes like server logs, blog posts and homework while they are chatting with each other. So BeePaste is getting bigger and more useful by time, from a simple pastebin, it is becoming an advanced text sharing platform!">
-    <link rel="shortcut icon" href="/img/logo.png">
-    <meta property="og:image" content="/img/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
+    <meta property="og:image" content="img/logo.png">
 
     <meta name="author" content="BeePaste">
     <meta name="twitter:creator" content="@beepasteio">
@@ -31,7 +31,7 @@
     <nav class="amber darken-1">
       <div class="nav-wrapper">
         <div class="container">
-          <a href="#main"><img class="brand-logo logo" src="/img/logotype.png"></a>
+          <a href="#main"><img class="brand-logo logo" src="img/logotype.png"></a>
           <ul  id="nav-mobile" class="right hide-on-med-and-down">
             <li scroll-target="#feature"><a href="#feature">Features</a></li>
             <li scroll-target="#about"><a href="#about">About</a></li>
@@ -44,6 +44,7 @@
     </div>
       <script type="text/javascript">
       $(document).ready(function(){
+        $('#main').height(window.innerHeight - $('nav').height());
         $('.scrollspy').scrollSpy({
             scrollOffset: 100,
             getActiveElement: function(id) {
@@ -55,7 +56,8 @@
         <section id="main" class="section scrollspy" style="padding-top: 0px;">
         <div class="parallax-container">
         <div class="parallax"><img src="img/bee.jpg"></div>
-        <h1 class="htop">BeePaste, paste your world !</h1>
+        <h1 class="htop" style="padding-bottom: 0; margin-bottom: 0;">BeePaste</h1>
+        <h2 class="center white-text" style="margin-top: 0;"><i class="fa fa-terminal" aria-hidden="true"></i> paste your world!</h2>
         <div class="row">
           <div class="container">
           <div class="col s4">
