@@ -51,3 +51,8 @@
 #nav-mobile a {
   color: #000 ;
 }
+
+.card .card-image .card-title {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.33);
+}
