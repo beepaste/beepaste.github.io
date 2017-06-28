@@ -25,7 +25,7 @@
             <li scroll-target="#feature"><a href="#feature">Features</a></li>
             <li scroll-target="#about"><a href="#about">About</a></li>
             <li scroll-target="#team"><a href="#team">Team</a></li>
-            <li scroll-target="#Donate"><a href="#donate">Donate</a></li>
+            <li scroll-target="#donate"><a href="#donate">Donate</a></li>
           </ul>
         </div>
         </div>
@@ -34,7 +34,7 @@
       <script type="text/javascript">
       $(document).ready(function(){
         $('.scrollspy').scrollSpy({
-            'scrollOffset': 100,
+            scrollOffset: 100,
             getActiveElement: function(id) {
                 return 'li[scroll-target="#' + id + '"]';
             }
