@@ -32,11 +32,18 @@
       <div class="nav-wrapper">
         <div class="container">
           <a href="#main"><img class="brand-logo logo" src="img/logotype.png"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
           <ul  id="nav-mobile" class="right hide-on-med-and-down">
             <li scroll-target="#feature"><a href="#feature">Features</a></li>
             <li scroll-target="#about"><a href="#about">About</a></li>
             <li scroll-target="#team"><a href="#team">Team</a></li>
             <li scroll-target="#donate"><a href="#donate">Donate</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+              <li scroll-target="#feature"><a href="#feature">Features</a></li>
+              <li scroll-target="#about"><a href="#about">About</a></li>
+              <li scroll-target="#team"><a href="#team">Team</a></li>
+              <li scroll-target="#donate"><a href="#donate">Donate</a></li>
           </ul>
         </div>
         </div>
@@ -44,6 +51,7 @@
     </div>
       <script type="text/javascript">
       $(document).ready(function(){
+          $(".button-collapse").sideNav();
         $('#main').height(window.innerHeight - $('nav').height());
         $('.scrollspy').scrollSpy({
             scrollOffset: 100,
@@ -63,7 +71,7 @@
           <div class="col s4">
           </div>
           <div class="col s4 center">
-          <a href="https://beepaste.io/"> <button class="btn btn-success btn-lg light blue darken 2 " type="submit">Paste!</button></a>
+          <a href="https://beepaste.io/" class="waves-effect waves-light btn btn-large light-blue">Get Started!</a>
           </div>
           <div class="col s4">
           </div>
