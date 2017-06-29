@@ -51,17 +51,30 @@
 #nav-mobile a {
   color: #000 ;
 }
-
 .card .card-image .card-title {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.33);
 }
-
 .feature-description {
 	color: black;
 	opacity: 0.5;
 }
-
 .parallax img {
 	filter: blur(8px);
+}
+.apt {
+	font-size: 21px;
+	text-align: justify;
+	text-justify: inter-word;
+	color: black;
+}
+.dpt {
+	font-size: 22px;
+	text-align: justify;
+	text-justify: inter-word;
+	color: black;
+}
+.btci {
+	height: 300px;
+	float: right;
 }
