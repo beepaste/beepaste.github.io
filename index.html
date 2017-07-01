@@ -27,7 +27,7 @@
     <script src="js/fa.js"></script>
 
   </head>
-  <body>
+  <body data-spy="scroll">
     <div class="navbar-fixed scrollspy">
     <nav class="amber darken-1">
       <div class="nav-wrapper">
@@ -40,19 +40,20 @@
             <li scroll-target="#team"><a href="#team"><i class="fa fa-users" aria-hidden="true"></i> Team</a></li>
             <li scroll-target="#donate"><a href="#donate"><i class="fa fa-credit-card" aria-hidden="true"></i> Donate</a></li>
           </ul>
-          <ul class="side-nav" id="mobile-demo">
+        </div>
+        </div>
+      </nav>
+    </div>
+        <ul class="side-nav" id="mobile-demo">
               <li scroll-target="#feature"><a href="#feature"><i class="fa fa-cog" aria-hidden="true"></i> Features</a></li>
               <li scroll-target="#about"><a href="#about"><i class="fa fa-info" aria-hidden="true"></i> About</a></li>
               <li scroll-target="#team"><a href="#team"><i class="fa fa-users" aria-hidden="true"></i> Team</a></li>
               <li scroll-target="#donate"><a href="#donate"><i class="fa fa-credit-card" aria-hidden="true"></i> Donate</a></li>
           </ul>
-        </div>
-        </div>
-      </nav>
-    </div>
+
       <script type="text/javascript">
       $(document).ready(function(){
-          $(".button-collapse").sideNav();
+        $(".button-collapse").sideNav();
         $('#main').height(window.innerHeight - $('nav').height());
         $('.parralax-container').height(window.innerHeight - $('nav').height());
         $('.scrollspy').scrollSpy({
@@ -89,19 +90,19 @@
           <h4 class="sftr">What makes us better!</h4>
           <br><br>
           <div class="row">
-              <div class="col s3">
+              <div class="col l3 m6">
                 <div class="center"><i class="fa fa-universal-access fa-4x fac" aria-hidden="true"></i><h4>Ease of Access</h4></div>
                 <p class="feature-description">you can access beepaste from almost everywhere! paste server logs just from your terminal, paste codes from our website or use our api to create your own method!</p>
               </div>
-              <div class="col s3">
+              <div class="col l3 m6">
                 <div class="center"><i class="fa fa-shield fa-4x fac" aria-hidden="true"></i><h4>Secure</h4></div>
                 <p class="feature-description">while you can paste texts like usual, we will provide you options for encryption to choose from! currently PGP and XOR-Password methods are supported!</p>
               </div>
-              <div class="col s3">
+              <div class="col l3 m6">
                 <div class="center"><i class="fa fa-code-fork fa-4x fac" aria-hidden="true"></i><h4>Open-Source</h4></div>
                 <p class="feature-description">It is open-source! so you can run your own instance if you don't trust us. Moreover, if you want to add some features, you can do so and create a pull-request or just redistribute it!</p>
               </div>
-              <div class="col s3">
+              <div class="col l3 m6">
                 <div class="center"><i class="fa fa-code fa-4x fac" aria-hidden="true"></i><h4>Powerful Editor</h4></div>
                 <p class="feature-description">We've integrated ACE editor in our service, therefore you can use its features such as hotkeys and syntax highlighting! Syntax highlighting is available for almost common and popular syntaxes!</p>
               </div>
@@ -112,7 +113,7 @@
       <div class="container">
       <h1  id="about" class=" section scrollspy onv ftr white-text">About</h1>
       <div class="row">
-        <div class="col s6">
+        <div class="col l6 m12">
           <div id="slider">
             <img src="img/screen1.png" />
             <img src="img/screen2.png" />
@@ -129,7 +130,7 @@
 
           </script>
         </div>
-        <div class="col s6">
+        <div class="col l6 m12">
           <p class="apt">BeePaste is a simple pastebin which is written using python, and sanic framework. It's very first usage was just to share our code snippets with friends, but while we grew up, we saw new worlds, such as Sys admins, Bloggers and Teachers, whomever has some text to share with others! They also needed somewhere to share their pastes like server logs, blog posts and homework while they are chatting with others. So BeePaste is getting bigger and more useful by time, from a simple pastebin, it is becoming an advanced text sharing platform!</p>
         </div>
       </div>
@@ -142,7 +143,7 @@
       <h1 class="onv ftr">Team</h1>
       <h4 class="sftr">developing heroes</h4>
       <div class="row">
-          <div class="col s3">
+          <div class="col l3 m6 s12">
             <div class="card">
               <div class="card-image">
                 <img src="img/mav.jpg">
@@ -150,11 +151,11 @@
                 <a class="btn-floating halfway-fab waves-effect waves-light fac"><i class="fa fa-github"></i></a>
               </div>
               <div class="card-content">
-                <p>Started Programming with C/C++, continued with both C++ and Python, and also Started the project! I also write @ hexlinux.ir</p>
+                <p>Started Programming with C/C++, continued with both C++ and Python, and also Started the project!</p>
               </div>
             </div>
           </div>
-        <div class="col s3">
+        <div class="col l3 m6 s12">
           <div class="card">
             <div class="card-image">
               <img src="img/am.jpg">
@@ -166,7 +167,7 @@
             </div>
           </div>
         </div>
-        <div class="col s3">
+        <div class="col l3 m6 s12">
           <div class="card">
             <div class="card-image">
               <img src="img/mostafa.jpg">
@@ -178,7 +179,7 @@
             </div>
           </div>
         </div>
-          <div class="col s3">
+          <div class="col l3 m6 s12">
             <div class="card">
               <div class="card-image">
                 <img src="img/sa.jpg">
@@ -198,18 +199,18 @@
       <h1 class="onv ftr white-text">Donate</h1>
       <h4 class="sftr">Take us a cup of coffee :)</h4>
       <div class="row">
-        <div class="col s4">
+        <div class="col l4 m4">
           <img class="btci" src="img/bit.png" alt="bit">
         </div>
-        <div class="col s8">
-          <blockquote style="border-left: 5px solid rgb(255, 255, 255);     word-break: break-word;"><h4 class="white-text">1GUf5hkZSyiPFXHh2Y8YkzGvM9srSqBQWn</h4></blockquote>
-          <h5 class="dpt white-text">As we are based in Iran, and due to the sanctions against where we live, the only possible way to collect donates from foreign people is Bitcoin! to buy bitcoins you can check <a href="https://www.bitcoin.com/buy-bitcoin">www.bitcoin.com/buy-bitcoin</a></h5>
-          <h5 class="dpt white-text">Also if you have problems with bitcoin, you can contact us with donate@beepaste.io and we will get a solution for you.</h5>
+        <div class="col l8 m8">
+          <blockquote style="border-left: 5px solid rgb(255, 255, 255);"><h4 class="white-text">1GUf5hkZSyiPFXHh2Y8YkzGvM9srSqBQWn</h4></blockquote>
+          <h5 class="dpt">As we are based in Iran, and due to the sanctions against where we live, the only possible way to collect donates from foreign people is Bitcoin! to buy bitcoins you can check <a href="https://www.bitcoin.com/buy-bitcoin">www.bitcoin.com/buy-bitcoin</a></h5>
+          <h5 class="dpt">Also if you have problems with bitcoin, you can contact us with donate@beepaste.io and we will get a solution for you.</h5>
         </div>
       </div>
     </div>
     </section>
-    <footer class="page-footer">
+    <footer id="footer" class="page-footer">
     <div class="footer-copyright">
     <div class="container center">
     <div><i class="fa fa-copyright gray" aria-hidden="true"><span class="gray"> 2017 BeePaste All rights reserved </span></i></div>
